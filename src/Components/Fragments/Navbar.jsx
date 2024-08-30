@@ -38,7 +38,7 @@ function Navbar() {
       <div
         className={
           nav
-            ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500 z-10"
+            ? "text-gray-300 fixed h-full left-0 top-0 w-[60%] bg-[#021526] ease-in-out duration-500 z-10"
             : "fixed left-[-100%]"
         }>
         <h1 className="text-3xl primary-color m-4">Iam</h1>
