@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { TypeAnimation } from "react-type-animation";
 import heroimg from "/img/profile.png";
 import { DarkMode } from "../../context/DarkMode";
+import Button from "../Elements/Button/Button";
 
 const Hero = () => {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode)
@@ -36,16 +37,8 @@ const Hero = () => {
         </p>
 
         <div className="my-8">
-          <a
-            href=""
-            className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-400 to-pink-500 text-white">
-            Download CV
-          </a>
-          <a
-            href=""
-            className={`px-6 py-3 w-full rounded-xl mr-4 border border-gray-400 hover:bg-gradient-to-br from-orange-400 to-pink-500 ${isDarkMode ? "text-white" : "text-[#021526] hover:text-white"}`}>
-            Contact
-          </a>
+          <Button variant="resume" />
+          <Button variant="contact" />
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from "react";
 
-//List Car for Project image
+//List Card for Project image
 const CardImg = (props) => {
-  const { img, id, name } = props;
+  const { img, id, name, href } = props;
   return (
     <div
       className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-[200px] bg-hover realative"
@@ -11,10 +11,17 @@ const CardImg = (props) => {
       <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
         <span className="text-2xl font-bold text-white tracking-wider">
           <div className="pt-8 text-center">
-            <a href="/">
-              <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                Live
-              </button>
+            <a href={href}>
+              {href.length > 0 && [
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  Live
+                </button>
+              ]}
+              {!href.length && [
+                <h2 className="text-center px-4 py-3 m-2text-[#071930] font-bold text-lg">
+                  {name}
+                </h2>
+              ]}
             </a>
           </div>
         </span>

@@ -5,33 +5,33 @@ import { DarkMode } from "../../context/DarkMode";
 const dataImg = [
   {
     id: 1,
-    name: "project 1",
-    img: "./img/proj1.png",
+    name: "Logistics Portal",
+    img: "/img/portal-log.png",
+    href: ""
   },
   {
     id: 2,
-    name: "project 2",
-    img: "/img/proj2.png",
+    name: "KPI Peformance",
+    img: "./img/kpi-peformance.png",
+    href: ""
   },
   {
     id: 3,
-    name: "project 3",
-    img: "/img/proj3.png",
+    name: "Shipment Request",
+    img: "/img/shipment-request.png",
+    href: ""
   },
   {
     id: 4,
-    name: "project 4",
-    img: "/img/proj4.png",
+    name: "System Information Recruitment Tracker",
+    img: "/img/recruitment-tracker.png",
+    href: ""
   },
   {
     id: 5,
-    name: "project 5",
-    img: "/img/proj5.png",
-  },
-  {
-    id: 6,
-    name: "project 6",
-    img: "/img/proj6.png",
+    name: "Skatboard Store",
+    img: "/img/skate-store.png",
+    href: "https://mhdilhaammm.github.io/store-skate/"
   },
 ];
 
@@ -50,7 +50,9 @@ const Work = () => {
 
       <div className="grid sm:grid-col-2 md:grid-cols-3 gap-4">
         {dataImg.map((data) => (
-          <CardImg img={data.img} key={data.id} name={data.name}></CardImg>
+          <CardImg img={data.img} key={data.id} name={data.name} href={data.href}>
+            {data.name}
+          </CardImg>
         ))}
       </div>
     </div>
