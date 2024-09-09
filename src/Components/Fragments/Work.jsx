@@ -42,9 +42,7 @@ const Work = () => {
       <div className="pb-8">
         <p className="text-4xl mb-3 font-bold primary-color">Project</p>
         <p className={isDarkMode ? "text-white" : "text-[#021526]"}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-          consequuntur laborum laudantium ipsam iste. Veniam eum facilis
-          incidunt repudiandae expedita!
+          These are some of the projects I worked on during my studies and internship.
         </p>
       </div>
 
