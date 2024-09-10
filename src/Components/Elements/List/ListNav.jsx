@@ -36,7 +36,13 @@ const SideBar = () => {
 
     return (
         <>
-            <h1 className="text-3xl primary-color m-4">Iam</h1>
+            <div className='flex flex-wrap items-center cursor-pointer border-b border-white px-5 py-5 ml-1 mr-1'>
+                <img src="img/profile.png" alt="" className='w-20 h-20 rounded-full `border-white object-cover' />
+                <div className='ml-4'>
+                    <p className='text-sm text-white'>Iam</p>
+                    <p className='text-xs text-gray-500 mt-0.5'>Web Developer</p>
+                </div>
+            </div>
             <ul className="p-8 text-2xl">
                 <li>
                     <button className="cursor-pointer ml-1 rounded-lg hover:text-slate-600" onClick={() => setIsDarkMode(!isDarkMode)}>
