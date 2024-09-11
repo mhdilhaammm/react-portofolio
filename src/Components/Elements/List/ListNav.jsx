@@ -15,10 +15,10 @@ const ListNav = () => {
                     <a href="#about">About Me</a>
                 </li>
                 <li className="p-5">
-                    <Link href="#project">Project</Link>
+                    <a href="#project">Project</a>
                 </li>
                 <li className="p-5">
-                    <Link href="#contact">Contact</Link>
+                    <a href="#education">Education</a>
                 </li>
                 <li className="p-5">
                     <button className="cursor-pointer ml-1 rounded-lg hover:text-slate-600" onClick={() => setIsDarkMode(!isDarkMode)}>
@@ -50,20 +50,20 @@ const SideBar = () => {
                     </button>
                 </li>
                 <li className="p-2">
-                    <Link href="#home">Home</Link>
+                    <a href="#home">Home</a>
                 </li>
                 <li className="p-2">
-                    <Link href="#about">About</Link>
+                    <a href="#about">About</a>
                 </li>
                 <li className="p-2">
-                    <Link href="#work">Work</Link>
+                    <a href="#project">Project</a>
                 </li>
                 <li className="p-2">
-                    <Link href="#experience">Experience</Link>
+                    <a href="#education">Education</a>
                 </li>
-                <li className="p-2">
+                {/* <li className="p-2">
                     <Link href="#contact">Contact</Link>
-                </li>
+                </li> */}
             </ul>
         </>
     )

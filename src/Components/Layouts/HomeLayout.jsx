@@ -5,6 +5,7 @@ import Skills from '../Fragments/Skills'
 import Work from '../Fragments/Work'
 import About from '../Fragments/About'
 import { DarkMode } from "../../context/DarkMode";
+import Education from '../Fragments/Education'
 
 const HomeLayout = () => {
     const { isDarkMode, setIsDarkMode } = useContext(DarkMode)
@@ -15,6 +16,7 @@ const HomeLayout = () => {
             <Hero />
             <Skills />
             <About />
+            <Education />
             <Work />
         </div>
     )

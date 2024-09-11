@@ -38,11 +38,11 @@ const dataImg = [
 const Work = () => {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
   return (
-    <div className="max-w-[1200px] mx-auto p-5">
-      <div className="pb-8">
+    <div className="max-w-[1200px] mx-auto p-5" id="project">
+      <div className="pb-8 py-5">
         <p className="text-4xl mb-3 font-bold primary-color">Project</p>
         <p className={isDarkMode ? "text-white" : "text-[#021526]"}>
-          These are some of the projects I worked on during my studies and internship.
+          During college, I honed my skills by creating several projects to improve my skills as a web developer, especially in the frontend. Here are some projects that I worked on during college and internship. Some themes, I created applications using the ASP.NET Framework and ASP.NET CORE followed by SQL SERVER as the database. And I also created a roller skate shop website using only html, css and javascript. To make it easier to organize data, I used a library from javascript, namely alpine.js. The Project i created during internship can not access on the public site, because that's a internal application company, And is it private.
         </p>
       </div>
 
