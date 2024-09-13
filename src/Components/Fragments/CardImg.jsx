@@ -5,7 +5,7 @@ const CardImg = (props) => {
   const { img, id, name, href } = props;
   return (
     <div
-      className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-[200px] bg-hover realative"
+      className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div h-[200px] bg-hover relative"
       key={id}>
       <img src={img} layout="fill" cover="object-fit" alt={name} />
       <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">

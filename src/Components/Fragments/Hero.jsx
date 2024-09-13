@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
 
       <div className="col-span-2 px-5">
-        <h1 className={`${isDarkMode ? "text-white" : "text-[#021526]"} text-4xl sm:text-5xl lg:text-8xl font-extrabold`}>
+        <h1 className={`${isDarkMode ? "text-white" : "text-[#021526]"} text-4xl sm:text-3xl lg:text-5xl font-extrabold`}>
           <span className="primary-color">I'm a</span>
           <br />
           <TypeAnimation
