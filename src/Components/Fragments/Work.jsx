@@ -33,6 +33,12 @@ const dataImg = [
     img: "/img/skate-store.png",
     href: "https://mhdilhaammm.github.io/store-skate/"
   },
+  {
+    id: 6,
+    name: "Website City",
+    img: "/img/city-site.png",
+    href: "https://mhdilhaammm.github.io/city-website/"
+  },
 ];
 
 const Work = () => {
