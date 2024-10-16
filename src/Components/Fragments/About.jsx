@@ -4,7 +4,6 @@ import { DarkMode } from "../../context/DarkMode";
 import Content from "../Elements/Content/Content";
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { time } from "framer-motion/client";
 
 const About = (props) => {
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -25,7 +24,7 @@ const About = (props) => {
     <>
       <div className={`${isDarkMode ? "text-white" : "text-[#021526]"} max-w-[1200px] mx-auto my-12`} id="about">
         <div className="md:grid md:grid-cols-2 sm:py-16" ref={ref}>
-          <motion.div variants={attributeAnimated} initial={attributeAnimated.hidden.item1}
+          <motion.div variants={attributeAnimated} initial={attributeAnimated.hidden.item1} 
             animate={inView ? "show" : {}}>
             <div className="mt-4 md:mt-0 text-left flex">
               <div className=" mx-6 text-justify">
