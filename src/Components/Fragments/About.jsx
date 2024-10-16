@@ -35,7 +35,7 @@ const About = (props) => {
             </div>
           </motion.div>
 
-          <div ref={ref} className="mx-auto py-10 md:py-0 sm:max-w-[500px]">
+          <div ref={ref} className="mx-8 py-10 md:py-0 sm:max-w-[500px]">
             <motion.div variants={attributeAnimated} initial={attributeAnimated.hidden.item2}
               animate={inView ? "show" : {}}>
               <img
